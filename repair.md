@@ -76,7 +76,7 @@ The wiring between the two reset-circuit inverters (U31 and U56 described above)
 
 ### Solder bridge hack
 
-Under the CPU is a via that carries the nWR signal from the CPU to and OR-gate buffer (U57) for system distribution.  This signal is very critical to normal system operation, and at some point in the past someone made a mistake with a cutting tool and cut the trace just as it was leaving the via-pad.  Their "fix" was to make a large enough solder-blob to bridge the gap they had created.
+Under the CPU is a via that carries the `nWR` signal from the CPU to an OR-gate buffer (U57) for system distribution.  This signal is very critical to normal system operation, and at some point in the past someone made a mistake with a cutting tool and cut the trace just as it was leaving the via-pad.  Their "fix" was to make a large enough solder-blob to bridge the gap they had created.
 
 ![Solder bridge](/images/bridge.jpg "Solder Bridge")
 
