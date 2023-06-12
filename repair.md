@@ -6,7 +6,7 @@ My NABU retro computer was always flaky, but in recent weeks it decided to just 
 
 ![NABU reset circuit](/images/reset_circuit.jpg "NABU reset circuit")
 
-Initially I planned on documenting each problem, complete with photos, but after seeing the number of problems I got lazy and just performed the repairs.
+Initially I planned on documenting each problem, but after seeing the number of problems I got lazy and just performed the repairs and taking some photos along the way.
 
 
 ### Power connector
@@ -40,6 +40,7 @@ Once the motherboard was removed I put it under the microscope for inspection (I
 
 The motherboard also has a lot of jammed-in components, components interfering with other components, components installed on top of other components, components pushing and bending other components out of the way, etc..  It almost feels like this was the designer's first big PCB or something, which I find surprising given the engineers NABU Corp is reported to have lured from places like DEC.
 
+![Pushed components](/images/push.jpg "Pushed Components")
 ![Bad stuff](/images/badstuff.jpg "Bad Stuff")
 
 Something else that always perplexed me about this system is, the TMS9918A VDP does not have a heat sink.  Probably without exception, every system that uses the 9918A family of VDP has (and usually needs for stable operation) a heat sink.  I really do not know how the NABU gets away without a heat sink on the VDP, but if I were not using the F18A MK1 in my NABU, I would have a heat sink on the 9918A.
@@ -75,15 +76,15 @@ The wiring between the two reset-circuit inverters (U31 and U56 described above)
 
 ### Solder bridge hack
 
-Under the CPU is a via that carries the nWR signal from the CPU to and OR-gate buffer (U57) for system distribution.  This signal is very critical to normal system operation, and at some point in the past someone made a mistake with a cutting tool and cut the trace just as it was leaving the via-pad.  Their "fix" was to make a large enough solder-blog to bridge the gap they had created.
+Under the CPU is a via that carries the nWR signal from the CPU to and OR-gate buffer (U57) for system distribution.  This signal is very critical to normal system operation, and at some point in the past someone made a mistake with a cutting tool and cut the trace just as it was leaving the via-pad.  Their "fix" was to make a large enough solder-blob to bridge the gap they had created.
 
 ![Solder bridge](/images/bridge.jpg "Solder Bridge")
 
-The problem with this kind of hack is, the solder bridging the gap has no support of a pad and is very susceptible to cracking.  This could easily happen, for example, by removing and reseating the CPU from the socket that is directly above this via.  Such a crack would certainly be intermittent and *very* hard to find.  I added a new wire between the two vias to prevent any current or future problems with this connection.
+The problem with this kind of hack is, the solder bridging the gap has no support of a pad and is very susceptible to cracking.  This could easily happen, for example, by removing and reseating the CPU in the socket that is directly above this via.  Such a crack would certainly be intermittent and *very* hard to find.  I added a new wire between the two vias to prevent any existing or future problems with this connection.
 
 
 ### Summary
 
 My NABU is working again, and powered up right away after reassembly.  No more intermittent power-on failures, and I even have a working power-supply fan that also provides some airflow for the motherboard.
 
-Despite having a lot of interesting ideas (especially for its time), this system is full of errors and poor execution.  I suspect many hobbyists are going to be experiencing failures and flaky behavior as these systems age and get used more and more.  While the fixes are generally not too difficult, finding a problem can be a real challenge and the poor motherboard quality makes rework a hazard (it would be very easy to lift a pad or trace, etc.).
+Despite having a lot of interesting ideas (especially for its time), this system is full of problems and poor (hasty?) execution.  I suspect many hobbyists are going to be experiencing failures and flaky behavior as these systems age and get used more and more.  While the fixes are generally not too difficult, finding a problem can be a real challenge and the poor motherboard quality makes rework a hazard (it would be very easy to lift a pad or trace, etc.).
