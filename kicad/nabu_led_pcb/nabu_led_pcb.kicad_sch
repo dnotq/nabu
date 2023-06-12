@@ -5,7 +5,7 @@
   (paper "A4")
 
   (title_block
-    (title "NABU PC Front Panel Board")
+    (title "NABU PC Front Panel LED Board")
     (date "June 12, 2023")
     (rev "A")
     (comment 1 "3003-900-4120")
@@ -368,7 +368,7 @@
     (uuid c894b626-483b-46c9-bca7-b8b4e7cf0316)
     (data
       iVBORw0KGgoAAAANSUhEUgAAAloAAACaCAIAAAD+TnEgAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA
-      AAsSAAALEgHS3X78AAAgAElEQVR4nHS9WbMkS24mhsXdIyIzz1bL3auHbJItzpPmiX9GMtNQ4pA0
+      AArwAAAK8AFCrDSYAAAgAElEQVR4nHS9WbMkS24mhsXdIyIzz1bL3auHbJItzpPmiX9GMtNQ4pA0
       cmb0L2WmF73qSTYku4fdfe+tqrNkRoQvAPSADD9Rl1LasbJTJyMj3OFw4MMHwBN/90//9+VyqbWm
       lMZxVNV1XWutzNxaExFmJiJEJCJiFrEizcxCCCklM8vbK6UUQvArmdnMas0iEqP/XrU1ZmZmACBA
       RAQAM1NVAEBERJzSVEqptQJACAEA/OY+Bv+4XwkAAPByWfb3IaIYY4yx1joMQwih1nq5XERkGIbp
@@ -2488,11 +2488,11 @@
       W/kz19jxZydqjOf/A0jTRbBTOw2YAAAAAElFTkSuQmCC
     )
   )
-  (image (at 82.55 124.46) (scale 2.54394)
+  (image (at 81.28 123.19) (scale 2.54394)
     (uuid dfe578f4-b763-4ea3-9e74-faee8b100c62)
     (data
       iVBORw0KGgoAAAANSUhEUgAAAk4AAADnCAIAAABnt06tAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA
-      AAsSAAALEgHS3X78AAAgAElEQVR4nLS9abPkym0gCiCTZG3nnN5u910k2fK8ePEiHP7/P8KfxuGY
+      AArwAAAK8AFCrDSYAAAgAElEQVR4nLS9abPkym0gCiCTZG3nnN5u910k2fK8ePEiHP7/P8KfxuGY
       GVuyLEu6Sy9nq51kJvA+gESByTotTcQMo+N0FYvMRGJPJBKJ//5v/wovXyJinxHxK/f9nctn5MAg
       kPUmQkBEIETEPou+i4iCKCLMLCKBLw0ysz5DRDhe2rA+LMBEBMDao/UrIjFGe16bYmbmFAQQxTeY
       Ae0tARIRP5bU9SGEUEVE9PcZaBiUA0wgNzH0qU0piUigKoSgj+WcQwgxRv2ccwYAoSCMgujRS+MI
